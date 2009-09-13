@@ -1,5 +1,9 @@
 Revision history for Test-WWW-Selenium-Catalyst
 
+0.06 - 2009/09/10
+ - Switch shutDown to shutDownSeleniumServer, which is present in all versions of
+   SeleniumRC but is the only shut down command that works from 1.0 on.
+
 0.05 - 2009/03/07
  - Use IPC::Cmd::can_run in tests to not have so many spurious failues due to
    no smoke rigs having java installed
