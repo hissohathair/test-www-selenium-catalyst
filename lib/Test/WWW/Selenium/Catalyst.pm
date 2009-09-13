@@ -247,7 +247,7 @@ END {
         if($www_selenium){
             diag("Shutting down Selenium Server $sel_pid") if $DEBUG;
             $www_selenium->stop();
-            $www_selenium->do_command('shutDown');
+            $www_selenium->do_command('shutDownSeleniumServer');
             undef $www_selenium;
         }
         diag("Killing Selenium Server $sel_pid") if $DEBUG;
